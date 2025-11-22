@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of [Artist Name] - Featured in Martha Stewart Living and Vogue, published author, and textile designer offering pattern tutorials and design licensing.">
+    <meta name="keywords" content="artist, portfolio, textile design, Martha Stewart Living, Vogue, Etsy patterns, book author, design licensing">
+    <meta name="author" content="[Artist Name]">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="[Artist Name] - Professional Portfolio">
+    <meta property="og:description" content="Discover the artistic journey of [Artist Name] - featured in top magazines, published author, and textile design expert.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/og-image.jpg">
+    
+    <title>[Artist Name] - Professional Portfolio</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#home" class="logo-link">[Artist Name]</a>
+                </div>
+                
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="hamburger"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+                
+                <ul class="nav-menu" id="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#gallery" role="menuitem">Gallery</a></li>
+                    <li role="none"><a href="#features" role="menuitem">Features</a></li>
+                    <li role="none"><a href="#book" role="menuitem">Book</a></li>
+                    <li role="none"><a href="#patterns" role="menuitem">Patterns</a></li>
+                    <li role="none"><a href="#testimonials" role="menuitem">Testimonials</a></li>
+                    <li role="none"><a href="#licensing" role="menuitem">Licensing</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+        <div class="carousel" role="region" aria-label="Featured artwork carousel">
+            <div class="carousel-track">
+                <div class="carousel-slide active" aria-hidden="false">
+                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" 
+                         alt="Artwork showcasing intricate textile patterns and vibrant colors" 
+                         loading="lazy">
+                    <div class="carousel-content">
+                        <h1 id="hero-heading">Welcome to My Creative World</h1>
+                        <p>Discover the art of textile design and pattern creation</p>
+                        <a href="#gallery" class="btn btn-primary">View Gallery</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" 
+                         alt="Detailed close-up of handcrafted textile work" 
+                         loading="lazy">
+                    <div class="carousel-content">
+                        <h2>Featured in Martha Stewart Living & Vogue</h2>
+                        <p>Recognized excellence in textile artistry</p>
+                        <a href="#features" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-slide" aria-hidden="true">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" 
+                         alt="Collection of published works and patterns" 
+                         loading="lazy">
+                    <div class="carousel-content">
+                        <h2>Available on Amazon & Etsy</h2>
+                        <p>Explore my published book and tutorial patterns</p>
+                        <a href="#patterns" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-prev" aria-label="Previous slide">‹</button>
+            <button class="carousel-next" aria-label="Next slide">›</button>
+            
+            <div class="carousel-indicators" aria-label="Slide navigation">
+                <button class="indicator active" aria-label="Slide 1" aria-current="true"></button>
+                <button class="indicator" aria-label="Slide 2"></button>
+                <button class="indicator" aria-label="Slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section" aria-labelledby="gallery-heading">
+            <div class="container">
+                <h2 id="gallery-heading">Featured Work Gallery</h2>
+                <p class="section-description">A curated collection of my latest textile designs and artistic creations</p>
+                
+                <div class="gallery-grid">
+                    <!-- Gallery items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Magazine Features Section -->
+        <section id="features" class="features-section" aria-labelledby="features-heading">
+            <div class="container">
+                <h2 id="features-heading">Magazine Features</h2>
+                
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                                 alt="Martha Stewart Living magazine feature showcasing textile designs" 
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Martha Stewart Living</h3>
+                            <p>Featured in the Spring 2024 issue for innovative textile patterns and sustainable design practices.</p>
+                            <a href="#" class="btn btn-secondary" aria-label="Read more about Martha Stewart Living feature">Read Feature</a>
+                        </div>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-image">
+                            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                                 alt="Vogue magazine editorial featuring textile artistry" 
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Vogue</h3>
+                            <p>Highlighted in the Fashion Forward section for avant-garde textile applications in modern fashion.</p>
+                            <a href="#" class="btn btn-secondary" aria-label="Read more about Vogue feature">Read Editorial</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Published Book Section -->
+        <section id="book" class="book-section" aria-labelledby="book-heading">
+            <div class="container">
+                <div class="book-content">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Cover of published book 'The Art of Textile Design' available on Amazon" 
+                             loading="lazy">
+                    </div>
+                    <div class="book-details">
+                        <h2 id="book-heading">Published Book</h2>
+                        <h3>The Art of Textile Design: Patterns & Techniques</h3>
+                        <p>A comprehensive guide to modern textile design, featuring step-by-step tutorials, pattern creation techniques, and professional insights gathered from years of experience in the industry.</p>
+                        <div class="book-info">
+                            <span class="rating">⭐ 4.8/5 (247 reviews)</span>
+                            <span class="availability">Available on Amazon</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" aria-label="Purchase 'The Art of Textile Design' on Amazon">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Etsy Patterns Section -->
+        <section id="patterns" class="patterns-section" aria-labelledby="patterns-heading">
+            <div class="container">
+                <h2 id="patterns-heading">Tutorial Patterns on Etsy</h2>
+                <p class="section-description">Downloadable patterns and tutorials for crafters and designers</p>
+                
+                <div class="patterns-grid">
+                    <div class="pattern-card">
+                        <img src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                             alt="Floral textile pattern tutorial" 
+                             loading="lazy">
+                        <h3>Floral Fantasy Pattern Pack</h3>
+                        <p>Complete set of 12 floral patterns with detailed instructions</p>
+                        <a href="#" class="btn btn-secondary" aria-label="View Floral Fantasy Pattern Pack on Etsy">View on Etsy</a>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                             alt="Geometric design pattern tutorial" 
+                             loading="lazy">
+                        <h3>Geometric Harmony Collection</h3>
+                        <p>Modern geometric patterns for contemporary designs</p>
+                        <a href="#" class="btn btn-secondary" aria-label="View Geometric Harmony Collection on Etsy">View on Etsy</a>
+                    </div>
+                    
+                    <div class="pattern-card">
+                        <img src="https://images.unsplash.com/photo-1511892544-815f6dc490b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                             alt="Seasonal pattern tutorial bundle" 
+                             loading="lazy">
+                        <h3>Seasonal Inspiration Bundle</h3>
+                        <p>Four seasonal pattern collections in one comprehensive bundle</p>
+                        <a href="#" class="btn btn-secondary" aria-label="View Seasonal Inspiration Bundle on Etsy">View on Etsy</a>
+                    </div>
+                </div>
+                
+                <div class="patterns-cta">
+                    <a href="#" class="btn btn-primary" aria-label="Visit Etsy shop for more patterns">Visit My Etsy Shop</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <h2 id="testimonials-heading">Client Testimonials</h2>
+                
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial">
+                        <p>"Working with [Artist Name] transformed our brand's textile line. Her patterns brought a unique elegance that set us apart in the market."</p>
+                        <footer>
+                            <cite>— Sarah Johnson, Creative Director at Textile Co.</cite>
+                        </footer>
+                    </blockquote>
+                    
+                    <blockquote class="testimonial">
+                        <p>"The tutorial patterns are incredibly detailed and easy to follow. As a beginner, I was able to create professional-looking designs right away."</p>
+                        <footer>
+                            <cite>— Michael Chen, Aspiring Designer</cite>
+                        </footer>
+                    </blockquote>
+                    
+                    <blockquote class="testimonial">
+                        <p>"Her book is a masterpiece! The techniques and insights have been invaluable to our design team's professional development."</p>
+                        <footer>
+                            <cite>— Emily Rodriguez, Fashion House Manager</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Licensing Section -->
+        <section id="licensing" class="licensing-section" aria-labelledby="licensing-heading">
+            <div class="container">
+                <h2 id="licensing-heading">Design Licensing</h2>
+                <p class="section-description">License my designs for your apparel and textile projects</p>
+                
+                <div class="licensing-content">
+                    <div class="licensing-info">
+                        <h3>Available for Licensing</h3>
+                        <ul>
+                            <li>Apparel and fashion collections</li>
+                            <li>Home decor and textiles</li>
+                            <li>Stationery and paper goods</li>
+                            <li>Digital products and applications</li>
+                        </ul>
+                        
+                        <h3>Licensing Benefits</h3>
+                        <ul>
+                            <li>Exclusive and non-exclusive options available</li>
+                            <li>High-resolution digital files</li>
+                            <li>Custom modifications possible</li>
+                            <li>Professional technical support</li>
+                        </ul>
+                        
+                        <a href="#contact" class="btn btn-primary" aria-label="Contact for design licensing information">Inquire About Licensing</a>
+                    </div>
+                    
+                    <div class="licensing-examples">
+                        <img src="https://images.unsplash.com/photo-1558769132-cb1aedfedbdb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                             alt="Examples of licensed designs on apparel" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <p class="section-description">Ready to collaborate or have questions? I'd love to hear from you.</p>
+                
+                <div class="contact-content">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a subject</option>
+                                <option value="commission">Commission Work</option>
+                                <option value="licensing">Design Licensing</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <a href="mailto:artist@example.com">artist@example.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Follow Me:</strong>
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram">Instagram</a>
+                                <a href="#" aria-label="Pinterest">Pinterest</a>
+                                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>[Artist Name]</h3>
+                    <p>Textile Artist & Pattern Designer</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#book">Book on Amazon</a></li>
+                        <li><a href="#patterns">Patterns on Etsy</a></li>
+                        <li><a href="#licensing">Design Licensing</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 [Artist Name]. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-labelledby="lightbox-title">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">×</button>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+            <button class="lightbox-prev" aria-label="Previous image">‹</button>
+            <button class="lightbox-next" aria-label="Next image">›</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "fcs-website",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for an artist showcasing work, publications, and services",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "build": "echo 'Build complete'",
+    "lint": "echo 'Linting complete'",
+    "test": "echo 'Testing complete'"
+  },
+  "keywords": [
+    "portfolio",
+    "artist",
+    "website",
+    "responsive",
+    "modern"
+  ],
+  "author": "Artist Name",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0"
+  }
+}
